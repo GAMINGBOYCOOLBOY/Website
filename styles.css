@@ -1,0 +1,147 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #0077cc, #00aaff, #ff7e5f, #feb47b, #ffdb92);
+    color: #fff;
+    overflow-x: hidden;
+    position: relative;
+    height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: linear-gradient(135deg, #0077cc, #00aaff, #ff7e5f, #feb47b, #ffdb92);
+}
+
+header {
+    background-color: transparent;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+    letter-spacing: 2px;
+}
+
+nav {
+    background-color: transparent;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 1.5em;
+    transition: all 0.3s ease;
+    flex: 1;
+}
+
+nav a:hover, nav a.active {
+    color: #fff;
+}
+
+.tabcontent {
+    display: none;
+    background: linear-gradient(135deg, #0077cc, #00aaff, #ff7e5f, #feb47b, #ffdb92);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.active {
+    display: block;
+}
+
+section {
+    padding: 20px;
+    margin-bottom: 20px;
+    background: linear-gradient(135deg, #0077cc, #00aaff, #ff7e5f, #feb47b, #ffdb92);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    color: #fff;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+p, ul {
+    font-size: 1.2em;
+    line-height: 1.5;
+    color: #fff;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: transparent;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+}
+
+.button-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.button-container a {
+    background: transparent;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.5em;
+    transition: transform 0.3s ease;
+}
+
+.button-container a:hover {
+    transform: scale(1.05);
+}
+
+.icon-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.icon-container img {
+    width: 60px;
+    height: 60px;
+    margin: 0 15px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.icon-container img:hover {
+    transform: scale(1.1);
+}
+
+@media only screen and (max-width: 600px) {
+    nav a {
+        margin: 0 10px;
+    }
+    header h1 {
+        font-size: 2.5em;
+    }
+}
