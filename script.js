@@ -22,6 +22,11 @@ function createSnowflakes(num) {
     }
 }
 
+function showContent() {
+    document.getElementById('loader-wrapper').style.display = 'none';
+    document.getElementById('content').style.display = 'block';
+}
+
 window.onload = function() {
     createSnowflakes(100);
 
@@ -84,4 +89,15 @@ window.onload = function() {
             console.error("There was a problem with the form submission:", error.message);
         });
     });
+
+    // Simulate loading process
+    let progress = 0;
+    const progressInterval = setInterval(() => {
+        progress += 10;
+        document.getElementById('progress-label').innerText = `Loading... ${progress}%`;
+        if (progress >= 100) {
+            clearInterval(progressInterval);
+            showContent();
+        }
+    }, 200);
 };
