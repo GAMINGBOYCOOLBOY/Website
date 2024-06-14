@@ -7,59 +7,65 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to Blizzard Hub</h1>
-    </header>
-    <nav>
-        <a href="#" onclick="openTab('about')" class="active">About</a>
-        <a href="#" onclick="openTab('services')">Services</a>
-        <a href="#" onclick="openTab('help')">Need Help?</a>
-        <a href="#" onclick="openTab('contact')">Contact</a>
-    </nav>
-    <div class="container">
-        <section id="about" class="tabcontent active">
-            <h2>About</h2>
-            <p>This script hub was made by Blizzard Hub || Scripter_Gaming. Blizzard Hub V2 is now live and free of bugs. Blizzard Hub is actively used for scripting and YouTube purposes. It is built with the latest technologies and designed to streamline version control for scripting projects.</p>
-        </section>
-        <section id="services" class="tabcontent">
-            <h2>Services</h2>
-            <ul>
-                <li>[+] Fix bugs: We offer comprehensive bug fixing services to ensure your scripts run smoothly without any errors.</li>
-                <li>[+] Error console troubleshooting: Our experts can identify and resolve errors appearing in your script's console, providing detailed explanations and solutions.</li>
-                <li>[+] Crash resolution: If your script is crashing unexpectedly, our team will diagnose the issue and implement solutions to prevent future crashes.</li>
-            </ul>
-        </section>
-        <section id="help" class="tabcontent">
-            <h2>Need Help?</h2>
-            <p>If you encounter any bugs with the hub script, please report them on our server/Discord. Our dedicated support team is available to assist you with any issues or inquiries you may have regarding the Blizzard Hub.</p>
-        </section>
-        <section id="contact" class="tabcontent">
-            <h2>Contact</h2>
-            <p>For more information, you can reach us through the following platforms:</p>
-            <div class="icon-container">
-                <a href="https://discord.gg/cFUcqvSg3N"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/98/Discord_logo.svg/240px-Discord_logo.svg.png" alt="Discord"></a>
-                <a href="https://youtube.com/@scripter_gaming?si=UsMoQGiOcYgg_giO"><img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube"></a>
-                <a href="https://www.roblox.com/users/4836386157/profile"><img src="https://i.imgur.com/nLQOsqY.png" alt="Roblox"></a>
-            </div>
-            <div class="contact-form">
-                <form id="contactForm" action="#" method="POST">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required><br><br>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required><br><br>
-                    <label for="message">Message:</label><br>
-                    <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
-                    <input type="submit" value="Submit">
-                </form>
-            </div>
-        </section>
-        <div class="button-container">
-            <a href="https://raw.githubusercontent.com/uaahjajajqoqiqkqhwhwhw/Blizzard-Hub-Official/main/Loadstring">Get the Script</a>
-        </div>
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div id="progress-label">Loading...</div>
     </div>
-    <footer>
-        <p>© 2024 Blizzard Hub created by Blizzard Hub || Scripter_Gaming</p>
-    </footer>
+    <div id="content" style="display: none;">
+        <header>
+            <h1>Welcome to Blizzard Hub</h1>
+        </header>
+        <nav>
+            <a href="#" onclick="openTab('about')" class="active">About</a>
+            <a href="#" onclick="openTab('services')">Services</a>
+            <a href="#" onclick="openTab('help')">Need Help?</a>
+            <a href="#" onclick="openTab('contact')">Contact</a>
+        </nav>
+        <div class="container">
+            <section id="about" class="tabcontent active">
+                <h2>About</h2>
+                <p>This script hub was made by Blizzard Hub || Scripter_Gaming. Blizzard Hub V2 is now live and free of bugs. Blizzard Hub is actively used for scripting and YouTube purposes. It is built with the latest technologies and designed to streamline version control for scripting projects.</p>
+            </section>
+            <section id="services" class="tabcontent">
+                <h2>Services</h2>
+                <ul>
+                    <li>[+] Fix bugs: We offer comprehensive bug fixing services to ensure your scripts run smoothly without any errors.</li>
+                    <li>[+] Error console troubleshooting: Our experts can identify and resolve errors appearing in your script's console, providing detailed explanations and solutions.</li>
+                    <li>[+] Crash resolution: If your script is crashing unexpectedly, our team will diagnose the issue and implement solutions to prevent future crashes.</li>
+                </ul>
+            </section>
+            <section id="help" class="tabcontent">
+                <h2>Need Help?</h2>
+                <p>If you encounter any bugs with the hub script, please report them on our server/Discord. Our dedicated support team is available to assist you with any issues or inquiries you may have regarding the Blizzard Hub.</p>
+            </section>
+            <section id="contact" class="tabcontent">
+                <h2>Contact</h2>
+                <p>For more information, you can reach us through the following platforms:</p>
+                <div class="icon-container">
+                    <a href="https://discord.gg/cFUcqvSg3N"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/98/Discord_logo.svg/240px-Discord_logo.svg.png" alt="Discord"></a>
+                    <a href="https://youtube.com/@scripter_gaming?si=UsMoQGiOcYgg_giO"><img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube"></a>
+                    <a href="https://www.roblox.com/users/4836386157/profile"><img src="https://i.imgur.com/nLQOsqY.png" alt="Roblox"></a>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm" action="#" method="POST">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required><br><br>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required><br><br>
+                        <label for="message">Message:</label><br>
+                        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </section>
+            <div class="button-container">
+                <a href="https://raw.githubusercontent.com/uaahjajajqoqiqkqhwhwhw/Blizzard-Hub-Official/main/Loadstring">Get the Script</a>
+            </div>
+        </div>
+        <footer>
+            <p>© 2024 Blizzard Hub created by Blizzard Hub || Scripter_Gaming</p>
+        </footer>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
