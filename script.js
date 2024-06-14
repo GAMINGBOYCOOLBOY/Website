@@ -1,5 +1,5 @@
 function openTab(tabName) {
-    var i, tabcontent, tablinks;
+    var i, tabcontent;
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].classList.remove('active');
@@ -39,7 +39,6 @@ window.onload = function() {
         const message = formData.get("message");
         const date = new Date();
         const timestamp = date.toLocaleString();
-        const webhookURL = "https://discord.com/api/webhooks/1206200874125230120/RRfpeW3MBTsksPuYjD2fZaNTeJhfB3FfUpIIXCjKx8QKWpiozO6erZn13SryfOzd2guk";
 
         const embedData = {
             embeds: [
@@ -70,7 +69,7 @@ window.onload = function() {
             ]
         };
 
-        fetch(webhookURL, {
+        fetch("https://discord.com/api/webhooks/1241015126589444208/fDWxlX4A3QI_QOmLuRui_f7uYsxbnKpySKIDI5M7qV79k6SJLP06NpLxdbDcJGXpCfo", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
