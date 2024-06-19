@@ -69,7 +69,7 @@ window.onload = function() {
             ]
         };
 
-        fetch("https://discord.com/api/webhooks/1241015126589444208/fDWxlX4A3QI_QOmLuRui_f7uYsxbnKpySKIDI5M7qV79k6SJLP06NpLxdbDcJGXpCfo", {
+        fetch("https://discord.com/api/webhooks/1252805200893313085/Y2fa370TRe_44qR9cTqmF9KYzfgyhTFg8hyqTV9G4M0MQD32CpmsjrYQt2qq4wmhLE7I", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
